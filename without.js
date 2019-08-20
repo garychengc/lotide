@@ -15,11 +15,18 @@ const assertArraysEqual = function(arr1, arr2) {
 };
 
 const without = function(source, itemsToRemove) {
-  source.map(element => {
-    if (itemsToRemove.includes(element)) source.splice(source.indexOf(element), 1);
+  const modifiedArr = source.filter(element => {
+    if (!itemsToRemove.includes(element)) {
+      return true;
+    }
   });
-  return source;
+  return modifiedArr;
 };
 
+
+// const words = ["hello", "world", "lighthouse"];
+// without(["hello", "world", "lighthouse"], ["lighthouse"]);
+// assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+// console.log(without([1, 2, 3, 1], [1]));
 // assertArraysEqual(without([1, 2, 3, 1], [1]), [2,3]);
 // assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
