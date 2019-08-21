@@ -1,5 +1,5 @@
 const assertEqual = function(actual, expected) {
-  if (actual === expected) {
+  if (eqArrays(arr1, arr2)) {
     return (`✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
     return (`❌ Assertion Failed: ${actual} !== ${expected}`);
