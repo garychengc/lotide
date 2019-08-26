@@ -6,7 +6,12 @@ const takeUntil = require('./takeUntil');
 const map = require('./map');
 const letterPosition = require('./letterPositions');
 const flatten = require('./flatten');
-
+const findKeyByValue = require('./findKeyByValue');
+const findKey = require('./findKey');
+const eqObjects = require('./eqObjects');
+const eqArrays = require('./eqArrays');
+const countOnly = require('./countOnly');
+const countLetters = require('./countLetters');
 
 
 module.exports = {
@@ -18,6 +23,10 @@ module.exports = {
   map: map,
   letterPosition: letterPosition,
   flatten: flatten,
-  
-
+  findKeyByValue: findKeyByValue,
+  findKey: findKey,
+  eqObjects: eqObjects,
+  eqArrays: eqArrays,
+  countOnly: countOnly,
+  countLetters: countLetters,
 };
